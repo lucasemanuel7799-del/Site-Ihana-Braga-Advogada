@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ihana Braga | Advocacia Trabalhista e Previdenciária</title>
+    <meta name="description" content="Advocacia especializada em Direito Trabalhista e Previdenciário. Defesa estratégica dos seus direitos com atendimento humanizado. Agende sua consulta.">
+    <meta name="keywords" content="advogada, trabalhista, previdenciário, inss, aposentadoria, demissão, advogada online">
+    <meta name="author" content="Ihana Braga">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ihanabraga.adv.br/">
+    <meta property="og:title" content="Ihana Braga | Advocacia Especializada">
+    <meta property="og:description" content="Defesa estratégica dos seus direitos trabalhistas e previdenciários. Clique para saber mais.">
+    <meta property="og:image" content="./images/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ihanabraga.adv.br/">
+    <meta property="twitter:title" content="Ihana Braga | Advocacia Especializada">
+    <meta property="twitter:description" content="Defesa estratégica dos seus direitos trabalhistas e previdenciários.">
+    <meta property="twitter:image" content="./images/og-image.jpg">
+
+    <link href="./src/output.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .5s ease-in-out; }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-gray-300 font-sans antialiased selection:bg-gold-400 selection:text-zinc-950 flex flex-col min-h-screen">
+
+    <header class="fixed w-full top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-serif text-gold-300 tracking-wider">
+                Ihana Braga
+            </a>
+
+            <nav class="hidden md:flex gap-8 items-center text-sm uppercase tracking-widest text-gray-400">
+                <a href="#home" class="hover:text-gold-400 transition-colors">Início</a>
+                <a href="#areas" class="hover:text-gold-400 transition-colors">Atuação</a>
+                <a href="#sobre" class="hover:text-gold-400 transition-colors">Sobre</a>
+                <a href="#faq" class="hover:text-gold-400 transition-colors">Dúvidas</a>
+                <a href="#contato" class="px-5 py-2 border border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-zinc-950 transition-all duration-300">
+                    Fale Conosco
+                </a>
+            </nav>
+            
+            <button id="menu-btn" class="md:hidden text-gold-500 p-2 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-gold-500/20 absolute w-full left-0 top-[70px]">
+            <nav class="flex flex-col p-6 space-y-4 text-center">
+                <a href="#home" class="text-gray-300 hover:text-gold-400 py-2 border-b border-white/5">Início</a>
+                <a href="#areas" class="text-gray-300 hover:text-gold-400 py-2 border-b border-white/5">Áreas de Atuação</a>
+                <a href="#sobre" class="text-gray-300 hover:text-gold-400 py-2 border-b border-white/5">Sobre</a>
+                <a href="#faq" class="text-gray-300 hover:text-gold-400 py-2 border-b border-white/5">Dúvidas Frequentes</a>
+                <a href="#contato" class="text-gold-400 font-bold py-2 mt-2">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home-mobile" class="md:hidden relative mt-[70px] h-[calc(100vh-70px)] flex flex-col justify-end overflow-hidden pb-6">
+        <div class="absolute top-0 left-0 w-full h-[65%] z-0">
+            <img src="./images/fotoTeste.jpg" alt="Dra. Ihana Braga" class="w-full h-full object-cover object-top opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-zinc-950/30"></div>
+        </div>
+        <div class="relative z-10 px-6 text-center animate-fade-in flex flex-col items-center">
+            <img src="./images/logo.PNG" alt="Logo Ihana Braga" class="w-44 mb-4 drop-shadow-lg opacity-95">
+            <h1 class="text-3xl font-serif text-gray-100 leading-tight mb-3">
+                Defesa estratégica <br>
+                <span class="text-gold-400 italic">dos seus direitos.</span>
+            </h1>
+            <p class="text-gray-400 text-sm font-light leading-snug max-w-xs mx-auto mb-6">
+                Advocacia comprometida com resultados e atendimento personalizado para resolver seus conflitos.
+            </p>
+            <div class="flex flex-col gap-3 w-full">
+                <a href="https://wa.me/55SEUNUMERO" target="_blank"
+                   class="w-full bg-gradient-to-r from-gold-500 via-gold-300 to-gold-500 bg-[length:200%_auto] hover:bg-right text-zinc-950 px-6 py-3.5 uppercase tracking-widest font-bold text-sm transition-all duration-500 border border-gold-400/50 rounded-sm text-center shadow-lg shadow-gold-900/20">
+                    Agendar Consulta
+                </a>
+                <a href="#areas" class="w-full border border-zinc-800 bg-zinc-900/50 px-6 py-3.5 uppercase tracking-widest text-sm hover:border-gold-500 hover:text-gold-500 transition text-center text-gray-400 rounded-sm">
+                    Saiba Mais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-desktop" class="hidden md:flex relative pt-32 pb-32 items-center overflow-hidden min-h-[90vh]">
+        <div class="absolute inset-0 bg-gradient-to-b from-zinc-900 to-zinc-950 z-0"></div>
+        <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center relative z-10 w-full">
+            <div class="space-y-6 text-left animate-fade-in">
+                <p class="text-gold-500 uppercase tracking-[0.2em] text-sm font-bold">Excelência Jurídica</p>
+                <h1 class="text-6xl font-serif text-gray-100 leading-tight">
+                    Defesa estratégica <br>
+                    <span class="text-gold-400 italic">dos seus direitos.</span>
+                </h1>
+                <p class="text-gray-400 text-lg font-light leading-relaxed max-w-md">
+                    Advocacia comprometida com resultados e atendimento personalizado para resolver seus conflitos com seriedade.
+                </p>
+                <div class="pt-6 flex gap-4 justify-start">
+                    <a href="https://wa.me/55SEUNUMERO" target="_blank"
+                       class="w-auto bg-gradient-to-r from-gold-500 via-gold-300 to-gold-500 bg-[length:200%_auto] hover:bg-right text-zinc-950 px-8 py-4 uppercase tracking-widest font-bold text-sm transition-all duration-500 border border-gold-400/50 rounded-sm text-center">
+                        Agendar Consulta
+                    </a>
+                    <a href="#areas" class="w-auto border border-zinc-700 px-8 py-4 uppercase tracking-widest text-sm hover:border-gold-500 hover:text-gold-500 transition text-center text-gray-400 rounded-sm">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <div class="relative p-2 border border-gold-500/30 rounded-sm bg-zinc-900/50 shadow-2xl shadow-black/50">
+                     <img src="./images/fotoTeste.jpg" alt="Dra. Ihana Braga" class="w-full h-auto max-h-[650px] object-cover grayscale hover:grayscale-0 transition duration-700 rounded-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="py-16 md:py-24 bg-zinc-900 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="mb-12 text-center md:text-left">
+                <p class="text-gold-500 uppercase tracking-[0.2em] text-xs font-bold mb-3">
+                    Áreas de Atuação
+                </p>
+                <h2 class="text-3xl md:text-5xl font-serif text-white leading-tight">
+                    Veja como posso <span class="text-gold-400 italic">lhe ajudar</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="group p-8 border border-zinc-800 bg-zinc-950/40 hover:border-gold-500/40 transition-all duration-300 rounded-sm hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="text-gold-500 p-3 bg-zinc-900 rounded-sm border border-white/5 group-hover:border-gold-500/20 transition">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif text-gold-200 mb-4 group-hover:text-gold-400 transition">Direito Trabalhista</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Foi demitido injustamente ou sem receber seus direitos?</span></li>
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Cálculo de horas extras, férias e 13º salário atrasados.</span></li>
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Reconhecimento de vínculo empregatício e assédio moral.</span></li>
+                    </ul>
+                    <a href="https://wa.me/55SEUNUMERO?text=Preciso%20de%20ajuda%20trabalhista" class="inline-block mt-6 text-xs uppercase tracking-widest text-gold-500 border-b border-gold-500/30 pb-1 hover:text-white hover:border-white transition">Falar sobre meu caso →</a>
+                </div>
+
+                <div class="group p-8 border border-zinc-800 bg-zinc-950/40 hover:border-gold-500/40 transition-all duration-300 rounded-sm hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="text-gold-500 p-3 bg-zinc-900 rounded-sm border border-white/5 group-hover:border-gold-500/20 transition">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif text-gold-200 mb-4 group-hover:text-gold-400 transition">Direito Previdenciário</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Planejamento de aposentadoria para garantir o melhor valor.</span></li>
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Auxílio-doença ou aposentadoria negada pelo INSS?</span></li>
+                        <li class="flex gap-3"><span class="text-gold-500 mt-1">✓</span><span>Pensões, BPC/LOAS e revisões de benefícios.</span></li>
+                    </ul>
+                    <a href="https://wa.me/55SEUNUMERO?text=Preciso%20de%20ajuda%20previdenciaria" class="inline-block mt-6 text-xs uppercase tracking-widest text-gold-500 border-b border-gold-500/30 pb-1 hover:text-white hover:border-white transition">Analisar benefício →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 md:py-24 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div class="w-full md:w-1/2 relative order-first md:order-last mb-4 md:mb-0">
+                    <div class="absolute inset-0 border border-gold-500/20 translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 rounded-sm"></div>
+                    <img src="https://ui-avatars.com/api/?name=Advogada&background=1f1f22&color=ab8e46&size=600" 
+                         class="relative z-10 w-full h-[350px] md:h-[500px] object-cover grayscale rounded-sm shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+                    <h2 class="text-3xl font-serif text-gold-300">Sobre a Dra. Ihana</h2>
+                    <div class="w-12 h-0.5 bg-gold-500 mx-auto md:mx-0 opacity-70"></div>
+                    <p class="text-lg text-gray-200 font-serif italic leading-relaxed">"A advocacia como instrumento de transformação social."</p>
+                    <div class="text-gray-400 text-sm md:text-base leading-loose space-y-4 text-justify">
+                        <p>Com atuação pautada na ética e transparência, o escritório Ihana Braga Advocacia se destaca pelo atendimento humanizado.</p>
+                        <p>Nossa missão é entender a dor do cliente e traçar o melhor caminho jurídico para a solução, garantindo clareza em cada etapa do processo.</p>
+                    </div>
+                    <div class="pt-2 pb-4">
+                        <p class="text-gold-500 font-serif text-xl">Ihana Braga</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">OAB/XX 00.000</p>
+                    </div>
+                    <div class="pt-2">
+                        <a href="https://wa.me/55SEUNUMERO" target="_blank"
+                           class="w-full md:w-auto inline-block bg-gradient-to-r from-gold-500 via-gold-300 to-gold-500 bg-[length:200%_auto] hover:bg-right text-zinc-950 px-8 py-3 uppercase tracking-widest font-bold text-xs md:text-sm transition-all duration-500 border border-gold-400/50 rounded-sm text-center shadow-lg shadow-gold-900/20">
+                            Falar com a Dra. Ihana Braga
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-zinc-900 border-t border-white/5">
+        <div class="max-w-3xl mx-auto px-5">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-serif text-white mb-2">Dúvidas Frequentes</h2>
+                <div class="w-12 h-0.5 bg-gold-500 mx-auto opacity-70"></div>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group border border-zinc-800 bg-zinc-950/50 rounded-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer p-5 text-gold-100 hover:text-gold-400 transition">
+                        <span>A primeira consulta é cobrada?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-400 text-sm mt-0 p-5 pt-0 leading-relaxed">
+                        Depende do caso. Para uma análise inicial rápida, geralmente não há custo. Porém, para pareceres jurídicos completos ou análise de documentos complexos, cobramos um valor de consulta que é abatido caso você nos contrate para o processo.
+                    </div>
+                </details>
+
+                <details class="group border border-zinc-800 bg-zinc-950/50 rounded-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer p-5 text-gold-100 hover:text-gold-400 transition">
+                        <span>Vocês atendem online em todo o Brasil?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-400 text-sm mt-0 p-5 pt-0 leading-relaxed">
+                        Sim! Hoje os processos são 100% digitais (PJe). Isso nos permite atender clientes de qualquer estado com a mesma eficiência e segurança, realizando reuniões por videochamada e assinaturas digitais.
+                    </div>
+                </details>
+
+                <details class="group border border-zinc-800 bg-zinc-950/50 rounded-sm">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer p-5 text-gold-100 hover:text-gold-400 transition">
+                        <span>Quanto tempo demora um processo trabalhista?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-400 text-sm mt-0 p-5 pt-0 leading-relaxed">
+                        O tempo varia conforme a complexidade e a vara onde corre o processo. Em média, um acordo pode sair em meses, mas processos que vão até instâncias superiores podem levar de 1 a 3 anos. Nossa função é agilizar ao máximo cada etapa.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-black border-t border-zinc-900 pt-16 pb-24 md:pb-8">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-12">
+                
+                <div class="text-center md:text-left space-y-4">
+                    <h2 class="text-2xl font-serif text-gold-300">Ihana Braga</h2>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+                        Compromisso com a justiça e a defesa intransigente dos seus direitos. Atuação especializada e atendimento humanizado.
+                    </p>
+                </div>
+
+                <div class="text-center md:text-left space-y-4">
+                    <h3 class="text-white font-serif text-lg mb-4">Contatos</h3>
+                    <div class="space-y-3">
+                        <a href="tel:+5500999999999" class="block text-gray-400 hover:text-gold-400 transition text-sm">
+                            (XX) 99999-9999
+                        </a>
+                        <a href="mailto:contato@ihanabraga.adv.br" class="block text-gray-400 hover:text-gold-400 transition text-sm">
+                            contato@ihanabraga.adv.br
+                        </a>
+                        <p class="text-gray-500 text-sm">
+                            Av. da Justiça, 1000<br>Centro, Cidade/UF
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-right space-y-4">
+                    <h3 class="text-white font-serif text-lg mb-4">Redes Sociais</h3>
+                    <div class="flex justify-center md:justify-end gap-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-gray-400 hover:text-white hover:bg-gold-600 hover:border-gold-600 transition duration-300">
+                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.407-.06 3.808-.06zm0-2c-2.739 0-3.088.01-4.185.062-1.15.055-2.072.247-2.923.578A6.908 6.908 0 002.592 3.298a6.905 6.905 0 00-2.67 2.612c-.331.85-.523 1.773-.578 2.923C-1.305 9.947-1.315 10.296-1.315 13.035c0 2.739.01 3.088.062 4.185.055 1.15.247 2.072.578 2.923a6.905 6.905 0 002.67 2.612 6.905 6.905 0 002.612 2.67c.85.331 1.773.523 2.923.578 1.097.051 1.446.062 4.185.062s3.088-.01 4.185-.062c1.15-.055 2.072-.247 2.923-.578a6.905 6.905 0 002.612-2.67 6.908 6.908 0 00.578-2.923c.051-1.097.062-1.446.062-4.185s-.01-3.088-.062-4.185c-.055-1.15-.247-2.072-.578-2.923a6.905 6.905 0 00-2.67-2.612 6.905 6.905 0 00-2.612-2.67c-.85-.331-1.773-.523-2.923-.578C15.403 1.99 15.054 2 12.315 2zm0 5.09a5.225 5.225 0 100 10.45 5.225 5.225 0 000-10.45zm0 8.45a3.225 3.225 0 110-6.45 3.225 3.225 0 010 6.45zm7.39-7.58a1.333 1.333 0 11-2.666 0 1.333 1.333 0 012.666 0z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-gray-400 hover:text-white hover:bg-gold-600 hover:border-gold-600 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:contato@ihanabraga.adv.br" class="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 text-gray-400 hover:text-white hover:bg-gold-600 hover:border-gold-600 transition duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-zinc-900 pt-8 flex flex-col items-center gap-2 text-xs text-zinc-600">
+                <p>© 2026 Ihana Braga Advocacia. Todos os direitos reservados.</p>
+                <p>OAB/XX 00.000</p>
+                <a href="https://wa.me/55SEUNUMERO_LUCAS" target="_blank" class="font-['Orbitron'] text-zinc-800 hover:text-gold-500 transition-colors tracking-widest mt-2 uppercase text-[10px] animate-pulse hover:animate-none cursor-pointer">
+                    Created by Lucas
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-zinc-900 border-t border-gold-500/20 p-4 z-40 hidden flex-col md:flex-row items-center justify-center gap-4 shadow-2xl">
+        <p class="text-xs text-gray-400 text-center md:text-left">
+            Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage em nosso site e personalizar conteúdo.
+        </p>
+        <button onclick="acceptCookies()" class="bg-gradient-to-r from-gold-500 via-gold-300 to-gold-500 bg-[length:200%_auto] hover:bg-right text-zinc-950 shadow-lg shadow-gold-900/20 px-6 py-2 text-xs font-bold uppercase rounded-sm transition-all duration-300">
+            Aceitar e Fechar
+        </button>
+    </div>
+
+    <a href="https://wa.me/55SEUNUMERO" target="_blank" class="fixed bottom-6 right-6 z-50 group">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75 animate-ping"></span>
+        
+        <div class="relative flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-[0_0_20px_rgba(37,211,102,0.5)] border-2 border-zinc-900 hover:scale-110 transition duration-300">
+             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </div>
+    </a>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+        menu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
+
+        // Cookies Logic
+        const cookieBanner = document.getElementById('cookie-banner');
+        if (!localStorage.getItem('cookiesAccepted')) {
+            setTimeout(() => {
+                cookieBanner.classList.remove('hidden');
+                cookieBanner.classList.add('flex');
+            }, 1000);
+        }
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
